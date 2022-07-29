@@ -1,0 +1,29 @@
+<%= form_with model: @post, :class => "form" do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </p>
+  <%= form.label :image %>
+
+  <% if post.image.attached? %>
+    <!-- display the image name and thumbnail -->
+    <p>
+      <%= image_tag(post.image.variant(resize_to_limit: [175, 175])) %><br>
+      <%= post.image.filename %>
+    </p>
+    <!-- provide a check box to delete the image -->
+    <div class='form-check'>
+      <%= form.check_box :remove_attached_image, class: 'form-check-input' %>
+      <%= form.label 'Check to remove attached image', class: 'form-check-label' %>
+    </div>
+  <% end %>
+
+  <%= form.file_field :image, class: 'file-field' %>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
