@@ -1,15 +1,52 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+ table,th, td{
+  border: ridge  black 1px;
+  width: 40%;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(184, 232, 150);
+}
+body{
+  background-color: gainsboro;
+}
+.error{
+  color: red;
+}
+th{
+  background-color: lightpink;
+}
+h1{
+  text-align: center;
+  background-color: rgb(196, 124, 190);
+  padding: 20px;
+  font-style: italic;
+  font-size: 50px;
+}
+li{
+  font-size: 28px;
+  padding: 30px;
+  list-style-type: square;
+}
+.form{
+  background-color: rgb(159, 172, 217);
+  padding: 50px;
+  width: 20%;
+  margin-left: 35%;
+  line-height: 30px;
+  font-size: 25px;
+}
+.link{
+  font-size: 30px;
+}
+.button{
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  font-size: 17px;
+}
+select{
+  width: 140px;
+  height: 25px;
+  font-size: 20px;
+}
+
