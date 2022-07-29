@@ -70,3 +70,15 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "google-api-client", "~> 0.53.0"
+
+gem "google-apis-drive_v3", "~> 0.26.0"
+
+gem "googleauth", "~> 1.2"
+
+gem "pry", "~> 0.14.1"
+
+gem "image_processing", "~> 1.12"
+
+gem "http", "~> 5.1"
